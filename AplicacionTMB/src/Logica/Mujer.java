@@ -8,7 +8,7 @@ public class Mujer extends Persona{
 
 	@Override
 	public Double calcularTMB() {
-		return 447.597 + (9.247*this.peso) + (3.098*this.altura) - (4.33*this.edad);
+		return 447.593 + (9.247*this.peso) + (3.098*this.altura) - (4.33*this.edad);
 	}
 	
 	

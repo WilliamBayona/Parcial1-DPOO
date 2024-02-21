@@ -10,11 +10,11 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Persona w;
-		w = new Hombre("William", 53.5, 166, 21);
+		w = new Hombre("William", 53.5, 167, 21);
 		
 		double valorhombre = w.calcularTMB();
 		
-		System.out.println("El TMB de William es:");
+		System.out.println("El TMB de William (Hombre) es:");
 		System.out.println(valorhombre);
 		
 		System.out.println("");
@@ -24,10 +24,27 @@ public class Principal {
 		
 		double valormujer = w.calcularTMB();
 		
-		System.out.println("El TMB de Sara es:");
+		System.out.println("El TMB de Sara (Mujer) es:");
 		System.out.println(valormujer);
 		
+		System.out.println("");
+
+		w = new Hombre("Martin", 60.2, 171, 21);
 		
+		double valorhombre2 = w.calcularTMB();
+		
+		System.out.println("El TMB de Martin (Hombre) es:");
+		System.out.println(valorhombre2);
+		System.out.println("");
+		
+		//Jugando con casos atipicos
+		
+		w = new Hombre("Persona con datos en cero", 0.0, 0, 0);
+		
+		double valorhombre3 = w.calcularTMB();
+		
+		System.out.println("El TMB de un hombre sin datos es:");
+		System.out.println(valorhombre3);
 		
 		
 		
